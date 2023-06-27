@@ -13,7 +13,6 @@ const Page: FC<PageProps> = ({}) => {
   async function loginWithGoogle() {
     setIsLoading(true);
     try {
-      throw new Error("Something went wrong");
       await signIn("google");
     } catch (error) {
       toast.error("Something went wrong with your login.");
