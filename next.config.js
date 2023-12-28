@@ -1,7 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
-const dotenv = require('dotenv');
-dotenv.config();
+const nextConfig = {
+	experimental: {
+		appDir: true,
+	},
+	images: {
+		domains: ["lh3.googleusercontent.com"],
+	},
+};
 
-
-module.exports = nextConfig
+module.exports = nextConfig;
